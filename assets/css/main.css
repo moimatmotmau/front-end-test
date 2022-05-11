@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root{
+    --primary-color: #304495;
+    --text-color:#505050;
+    --white-color:#fff;
+    --black-color: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 62.5%;   
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+.flex{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.active{
+    background-color: var(--primary-color);
+    color: var(--white-color) !important;
+}
+.btn{
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    background-color: var(--white-color);
+
+}
+
+.btn-primary{
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.btn-align{
+    margin: 20px 50% 50px 50%;
+    transform: translateX(-50%);
+}
+
+.grid{
+    display: grid;
+    gap: 12px;
+}
+
+.title{
+    text-align: center;
+    padding-bottom: 5px;
+    position: relative;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.title::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 40px;
+    height: 3px;
+    transform: translateX(-50%);
+    background-color: #f5ac1c ;
+
+}
+
+.card{
+    padding-top: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all ease-in .5s;
+}
+
+
+  .carousel-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    font-size: 18px;
+    color: var(--white-color);
+  }
+  .btn-next{
+      top: 50%;
+      right: calc(3% + 30px);
+  }
+  .btn-prev{
+    top: 50%;
+    left: calc(3% + 7px);
+}
+
+  
+
+
